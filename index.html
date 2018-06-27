@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>It&rsquo;s Not Arbitrary, It&rsquo;s Science!</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <h1>It&rsquo;s Not Arbitrary, It&rsquo;s Science!</h1>
+      </div>
+    </header>
+    <main>
+      <div class="order-form" id="order-form">
+        <form class="" action="." method="post" id="actual-form">
+          <div class="form-item">
+            <label for="product" class="inline-label">Product</label>
+            <div class="select-style">
+              <select class="product-select" name="product">
+                <option value="0">Product<sup>&reg;</sup></option>
+                <option value="1">Intro Offer</option>
+                <option value="2">Demo Kit</option>
+                <option value="3">Brochure</option>
+                <option value="4">Poster</option>
+                <option value="5">Easelback Poster</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="quantity" class="inline-label">Quantity</label>
+            <input type="number" name="quantity" value="1">
+          </div>
+          <div class="form-item">
+            <label for="date" class="inline-label">Date Needed</label>
+            <input type="date" id="date-input" name="date-needed" value="" required="true">
+          </div>
+          <div class="form-item pull-right last-item">
+            <button type="submit" class="btn" id="submitButton" name="button">Tell Me When!</button>
+          </div>
+        </form>
+        <div class="results" id="results" hidden>
+          <p>You need to place your order</p>
+          <div class="results-wrap">
+            <p class="days-result" id="days-num">0</p><p class="days-result">days in advance.</p>
+          </div>
+          <div class="pull-right last-item">
+            <button type="button" class="btn" id="redoButton" name="button" disabled>Try Again!</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./scripts/main.js" charset="utf-8"></script>
+  </body>
+</html>
