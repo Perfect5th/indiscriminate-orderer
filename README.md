@@ -2,4 +2,4 @@
 
 This is how to handle internal product order requests.
 
-this is fun, isn't
+this is fun, isn't it?
